@@ -3,16 +3,12 @@
 	<head>
 		<title>Ciudadanos 4 patas</title>
 		<link rel="stylesheet"  href="./css/styles.css">
-
-
 	</head>
 	<body>
 		<h1>Ciudad de 4 patas</h1>
 		<p>Este es el formualario que debe diligenciar para registar una mascota</p>
 			<br /><br />
-			Fecha <input type="date" >
-			<br /><br />
-			Nombre: <input type="text">
+			Fecha de registro<input id="date-input" type="date" >
 			<br /><br />
 			Nombre del propietario: <input type="text">
 			<br /><br />
@@ -29,18 +25,23 @@
 				<option>Mediano</option>
 				<option>Grande</option>
 			</select>
-			<table>
+			<br /><br />
+			<input type="button" value="Guardar">
+			<input type="button" value="Limpiar">
+			<table >
 				<thead>
-					<th>Fecha de Registro</th><br />
-					<th>Nombre del propietario</th><br />
-					<th>Nombre de la mascota</th><br />
-					<th>Edad de la mascota</th><br />
-					<th>Especie</th><br />
-					<th>Tamaño</th><br />
-					<th>Acciones</th><br />
+					<th class="column-header column-header-id">Id</th><br />
+					<th class="column-header">Fecha de Registro</th><br />
+					<th class="column-header">Nombre del propietario</th><br />
+					<th class="column-header">Nombre de la mascota</th><br />
+					<th class="column-header">Edad de la mascota</th><br />
+					<th class="column-header">Especie</th><br />
+					<th class="column-header">Tamaño</th><br />
+					<th class="column-header">Acciones</th><br />
 				</thead>
 				<tbody>
 					<tr>
+						<td>1</td>
 						<td>2021-08-24</td>
 						<td>Pepito perea</td>
 						<td>max</td>
@@ -54,6 +55,39 @@
 					</tr>
 				</tbody>
 			</table>
-			<br /><br />
+			<script >
+				var i = true;
+				let j = false;
+
+				var student = {
+					name: "Pepito perez",
+					age:25,
+					faculty:"Systems",
+					active:true,
+					seyHello: function () {
+						console.log("Hola perro", this.name);
+					},
+					sayHelloWithArrow: () => {
+					let message = "Hello, world!";
+					console.log(message);
+					}
+
+				};
+
+				var  printMessage = function (i = false) {
+					
+					if (i) {
+						console.log("hola mundo");
+					} else{
+						console.log("adios perro");
+					}
+				}
+				printMessage();
+				
+
+
+
+			</script>
 	</body>
+
 </html>

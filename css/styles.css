@@ -1,5 +1,22 @@
+table {
+	border: 1px solid;
+	border-collapse: collapse;
+	border-color: orange;
+}
+
 th {
-				border:1px solid;
-				border-color:orange;
-				padding:5px;
-			}
+	border:1px solid;
+	border-color:orange;
+	padding:5px;
+}
+th.column-header{
+	color: #149EE8;
+}
+th.column-header-id{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#date.input{
+	font-weight: 30 px;
+}
